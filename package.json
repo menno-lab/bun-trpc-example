@@ -1,0 +1,19 @@
+{
+    "name": "bun-trpc-demo",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "dev:client": "cd apps/client && bun dev",
+        "dev:server": "cd apps/server && bun dev",
+        "dev": "concurrently \"bun dev:server\" \"bun dev:client\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\""
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "concurrently": "^8.2.1",
+        "prettier": "^3.0.3"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    }
+}
