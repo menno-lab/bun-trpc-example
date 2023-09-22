@@ -1,3 +1,9 @@
-# Bun x tRPC Minimal example
+# Bun + tRPC
 
-An example application using Bun + tRPC + Vite
+An example project using Bun and tRPC
+
+## Setup
+
+-   Clone project
+-   Run `bun install`
+-   Run `bun dev`
