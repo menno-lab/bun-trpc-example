@@ -8,8 +8,6 @@ export const trpcClient = trpc.createClient({
     links: [
         httpBatchLink({
             url: `${import.meta.env.VITE_API_BASE_URL}/trpc`,
-            // Needed for CORS to work
-            fetch: (url) => fetch(url),
         }),
     ],
 });
